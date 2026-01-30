@@ -1,0 +1,164 @@
+print('Escola de Dados da Alura!')
+print('nome: Atália')
+print('sobrenome: Silva')
+
+print('A')
+print('T') #comentario criado
+print('A')
+print('L')
+print('I')
+print('A')
+
+print(23, 'Julho', 1998) #é assim que é feito um comentario em python
+
+print('Ano atual: [2026]')
+
+''' comentario de varias linhas
+pode ser feito assim
+utilizando tres aspas simples
+ou tres aspas duplas'''
+
+''' Markdown é uma formatacao de texto por marcacao'''
+
+i = 10
+type(i)
+print(type(i)) #mostra o tipo da variavel
+
+b= True
+type(b)
+print(type(b))
+
+nome = 'Fabricio Daniel'
+idade = 15
+media_aluno = 8.5
+situacao_aprovado = True
+
+print(nome, idade, media_aluno, situacao_aprovado)
+
+f_seguranca = 5
+s_seguranca = 3000
+
+f_docente = 16
+s_docente = 6000
+
+f_diretoria = 1
+s_diretoria = 12500
+
+total_funcionarios = f_seguranca + f_docente + f_diretoria
+print(total_funcionarios)
+
+diferenca_salario = s_diretoria - s_seguranca
+print(diferenca_salario)
+
+media_salarial = (f_segurancas_seguranca + f_docente *
+s_docente + f_diretorias_diretoria) / total_funcionarios
+print(media_salarial)
+
+operador = 2
+potencia = 3
+resultado = operador ** potencia
+print(resultado)
+
+dividendo = 7
+divisor = 3
+resultado = dividendo%divisor
+print(resultado)
+
+A = 7
+B = 3
+C = A // B
+print (C)
+
+s1 = 'Atália'
+s2 = 'Daniel'
+print (type(s1), type(s2))
+
+Metodos = funcoes que estao associadas a objetos
+sintaxe = objeto.metodo()
+MANIPULAÇÃO DE STRINGS
+texto = ' Atália Rodrigues Tessoa da Silva Rosa '
+print(texto)
+print(texto.upper()) #o texto retorna as letras maiusculas
+print(texto.lower()) #o texto retorna as letras minusculas
+print(texto.strip()) #esse metodo tira os espacos em branco no inicio e no fim do texto
+print(texto.replace('T', 'P')) #esse metodo substitui um caractere por outro'
+texto = texto.strip().replace('T', 'P') #essa linha sera executado todos os metodos e sera usado para atualizar o valor que foi inserido na variavel texto
+texto
+print(texto)
+
+chr(64)
+print(chr(64)) #retorna o caractere associado ao codigo unicode passado como parametro
+
+#COLETA DE DADOS
+#A funcao input() ela retornar uma string
+
+nome = input('Escrevar o seu nome: ') #A variavel nome ira armazenar o valor que o usuario digitou
+print('o nome digitado foi:', nome)
+
+A = input('Digite o ano de nascimento: ')
+print(type(A)) #o tipo da variavel A sera string
+
+#convertendo a string para inteiro
+A = int(input('Digite o ano de nascimento: ')) #a funcao input sera convertida para inteiro
+print(type(A)) #o tipo da variavel A sera inteiro
+
+A = int(input('Digite o ano de entrada: '))
+nota = float(input('Digite a nota do aluno: ')) #a funcao input sera convertida para float
+print(f'O ano de entrada foi: {A}, e a nota foi: {nota}, parabens!') #Usando a letra f a valor que foi digitado na variavel pode ser digitado dentro dos parametros das aspas simples
+
+nome_aluno = 'Fabricio Daniel'
+print('Nome do aluno: %s' %(nome_aluno)) #o tipo %s especifica que o valor a ser exibido é do tipo string, sendo tambem uma funcao str()
+
+nome_aluno = 'Valerie Silva'
+idade_aluno = 16
+media_aluno = 8.75
+print('O aluno %s tem %d anos e sua media é %.2f' %(nome_aluno, idade_aluno, media_aluno)) #o tipo %d especifica que o valor a ser exibido é do tipo inteiro e o tipo %f especifica que o valor a ser exibido é do tipo float
+
+print('Esse texto possui uma quebra de linha \n aqui.')
+
+print('Quantidade\tQualidade\n5 amostras\tAlta\n3 amostras\tBaixa') #tabulação, exemplo de tabela
+
+print("Caminho do arquivo: C:\arquivos\documento.csv") #exembo de barra invertida
+
+print('Ouvi uma vez "É por cauda do amor que safricios sao feitos."') #exemplo de aspas duplas dentro de aspas simples
+
+print('Ouvi uma vez 'plante hoje para colher amanha.'')
+
+#EXERCICIOS
+pergunta1 = input('Qual o seu nome? ')
+pergunta2 = input('Qual a sua idade? ')
+pergunta3 = float(input('Qual a sua altura? '))
+print(f'Ola, {pergunta1}, voce tem {pergunta2} anos e voce mede {pergunta3} metros de altura.')
+
+pergunta4 = input('Digite um numero: ')
+pergunta5 = input('Digite outro numero: ')
+soma = int(pergunta4) + int(pergunta5)
+print(f'A soma dos dois numero é: {soma}')
+
+media_ponderada = (51 + 122 + 203 + 154) / (1+2+3+4)
+print(f'Média {media_ponderada}.')
+
+ESTRUTURAS CONDICIONAIS
+media = float(6.0)
+nota = float(input('Digite a nota do aluno: '))
+
+if nota >= media:
+print('Aluno aprovado!')
+else:
+print('Aluno reprovado!')
+
+nota = float(input('Digite a nota do aluno: '))
+if nota >= 6.0:
+print('Aluno aprovado!')
+if nota >= 4.0 and nota < 6.0:
+print('Aluno de recuperação!')
+if nota < 4.0:
+print('Aluno reprovado!')
+
+nota = float(input('Digite a nota do aluno: '))
+if nota >= 6.0:
+print('Aluno aprovado!')
+elif nota >= 4.0 and nota < 6.0:
+print('Aluno de recuperação!')
+else:
+print('Aluno reprovado!')
